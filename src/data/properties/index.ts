@@ -1,4 +1,7 @@
-import { canMiquel } from './can-miquel';
+import { canMiquel } from "./can-miquel"
+import { testVivienda } from "./test-vivienda"
 
-export const properties = [canMiquel];
-export const propertiesById = Object.fromEntries(properties.map((p) => [p.id, p]));
+export const properties = {
+  "can-miquel": canMiquel,
+  "test-vivienda": testVivienda
+}
