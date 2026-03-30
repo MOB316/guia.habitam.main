@@ -1,0 +1,81 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --background: 40 20% 97%;
+    --foreground: 0 0% 35%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 0 0% 35%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 0 0% 35%;
+
+    --primary: 188 14% 61%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 163 45% 89%;
+    --secondary-foreground: 188 20% 30%;
+
+    --muted: 163 25% 94%;
+    --muted-foreground: 0 0% 50%;
+
+    --accent: 163 45% 89%;
+    --accent-foreground: 188 20% 30%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 163 15% 88%;
+    --input: 163 15% 88%;
+    --ring: 188 14% 61%;
+
+    --radius: 0.75rem;
+
+    --habitam-mint: 163 45% 89%;
+    --habitam-grey-green: 188 14% 61%;
+    --habitam-text: 0 0% 45%;
+    --habitam-dark: 188 20% 25%;
+    --habitam-warm-bg: 40 20% 97%;
+
+    --sidebar-background: 0 0% 98%;
+    --sidebar-foreground: 240 5.3% 26.1%;
+    --sidebar-primary: 188 14% 61%;
+    --sidebar-primary-foreground: 0 0% 98%;
+    --sidebar-accent: 163 45% 89%;
+    --sidebar-accent-foreground: 188 20% 30%;
+    --sidebar-border: 163 15% 88%;
+    --sidebar-ring: 188 14% 61%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-sans antialiased;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    color: hsl(188 20% 25%);
+    font-weight: 700;
+  }
+}
+
+@layer utilities {
+  .habitam-section {
+    @apply py-16 px-4 md:px-8 lg:px-16 max-w-6xl mx-auto;
+  }
+
+  .habitam-card {
+    @apply bg-card rounded-2xl p-6 shadow-sm border border-border/50 transition-all duration-300 hover:shadow-md;
+  }
+
+  .habitam-gradient {
+    background: linear-gradient(135deg, hsl(163 45% 89% / 0.4), hsl(188 14% 61% / 0.1));
+  }
+}
