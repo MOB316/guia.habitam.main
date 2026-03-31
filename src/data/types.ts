@@ -4,6 +4,7 @@ type T3 = Record<Language, string>;
 
 export interface PropertyData {
   id: string;
+  slug: string;
   name: string;
   subtitle: T3;
   heroImage: string;

@@ -2,6 +2,7 @@ import type { PropertyData } from '../types';
 
 export const canMiquel: PropertyData = {
   id: "can-miquel",
+  slug: "can-miquel",
   name: "Ca'n Miquel",
   subtitle: {
     es: "Apartamento premium en el corazón de Palma",
