@@ -1,1 +1,1 @@
-export const SHARED_PROPERTY_HERO_IMAGE = "/habitam-hero-brand.svg";
+export const SHARED_PROPERTY_HERO_IMAGE = "/habitam-hero-option-2.svg";

@@ -12,7 +12,7 @@ const FooterSection = ({ property }: { property: PropertyData }) => {
           <div className="space-y-4">
             <div className="inline-flex rounded-2xl bg-white px-4 py-3 shadow-[0_18px_40px_rgba(7,27,38,0.18)]">
               <img
-                src="/habitam-logo.svg"
+                src="/habitam-logo-official.jpg"
                 alt="Habitam Palma"
                 className="h-20 w-auto rounded-md object-contain sm:h-24"
               />
