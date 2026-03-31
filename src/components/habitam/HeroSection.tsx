@@ -18,10 +18,11 @@ const HeroSection = ({ property }: { property: PropertyData }) => {
     <section className="relative min-h-[85vh] flex items-end">
       <div className="absolute inset-0">
         <img src={property.heroImage} alt={property.name} className="w-full h-full object-cover" />
-        <div className="absolute inset-0 bg-gradient-to-t from-black/70 via-black/30 to-black/10" />
+        <div className="absolute inset-0 bg-gradient-to-t from-habitam-dark/80 via-habitam-dark/28 to-white/10" />
+        <div className="absolute inset-0 bg-[radial-gradient(circle_at_top_left,rgba(255,247,234,0.34),transparent_34%),linear-gradient(135deg,rgba(186,219,211,0.14),transparent_52%)]" />
       </div>
 
-      <div className="relative z-10 w-full max-w-6xl mx-auto px-4 md:px-8 pb-12 pt-32">
+      <div className="relative z-10 w-full max-w-6xl mx-auto px-4 md:px-8 pb-12 pt-36">
         <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.6 }}>
           <p className="text-white/80 text-sm font-medium tracking-widest uppercase mb-2">{t('welcome')}</p>
           <h1 className="text-4xl md:text-6xl font-extrabold text-white mb-3">{property.name}</h1>

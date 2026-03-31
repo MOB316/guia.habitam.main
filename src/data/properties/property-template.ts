@@ -1,4 +1,5 @@
 import type { PropertyData } from "../types";
+import { SHARED_PROPERTY_HERO_IMAGE } from "./shared";
 
 export const propertyTemplate: PropertyData = {
   id: "nuevo-inmueble",
@@ -9,7 +10,7 @@ export const propertyTemplate: PropertyData = {
     en: "Property subtitle in English",
     de: "Untertitel der Unterkunft auf Deutsch",
   },
-  heroImage: "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1600&q=80",
+  heroImage: SHARED_PROPERTY_HERO_IMAGE,
   welcomeMessage: {
     es: "Mensaje de bienvenida para los huespedes.",
     en: "Welcome message for guests.",
