@@ -9,9 +9,15 @@ const FooterSection = ({ property }: { property: PropertyData }) => {
     <footer className="bg-habitam-dark text-white/80">
       <div className="max-w-6xl mx-auto px-4 md:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div>
-            <h3 className="text-xl font-bold text-white mb-2">Habitam</h3>
-            <p className="text-sm leading-relaxed text-white/60">{t('footerTagline')}</p>
+          <div className="space-y-4">
+            <div className="inline-flex rounded-2xl bg-white px-4 py-3 shadow-[0_18px_40px_rgba(7,27,38,0.18)]">
+              <img
+                src="/habitam-logo.svg"
+                alt="Habitam Palma"
+                className="h-20 w-auto rounded-md object-contain sm:h-24"
+              />
+            </div>
+            <p className="max-w-sm text-sm leading-relaxed text-white/60">{t('footerTagline')}</p>
           </div>
 
           <div className="space-y-3">
