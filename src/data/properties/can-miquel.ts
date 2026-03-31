@@ -1,4 +1,5 @@
 import type { PropertyData } from '../types';
+import { SHARED_PROPERTY_HERO_IMAGE } from './shared';
 
 export const canMiquel: PropertyData = {
   id: "can-miquel",
@@ -9,7 +10,7 @@ export const canMiquel: PropertyData = {
     en: "Premium apartment in the heart of Palma",
     de: "Premium-Apartment im Herzen von Palma"
   },
-  heroImage: "https://images.unsplash.com/photo-1600596542815-ffad4c1539a9?w=1600&q=80",
+  heroImage: SHARED_PROPERTY_HERO_IMAGE,
   welcomeMessage: {
     es: "Nos alegra que estés aquí. Esta guía tiene todo lo que necesitas para disfrutar tu estancia.",
     en: "We're glad you're here. This guide has everything you need to enjoy your stay.",

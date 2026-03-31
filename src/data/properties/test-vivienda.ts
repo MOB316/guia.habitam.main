@@ -1,4 +1,5 @@
 import type { PropertyData } from "../types";
+import { SHARED_PROPERTY_HERO_IMAGE } from "./shared";
 
 export const testVivienda: PropertyData = {
   id: "test-vivienda",
@@ -9,8 +10,7 @@ export const testVivienda: PropertyData = {
     en: "Dynamic test guide to validate multiple properties",
     de: "Dynamischer Test-Guide zur Validierung mehrerer Unterkunfte",
   },
-  heroImage:
-    "https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1600&q=80",
+  heroImage: SHARED_PROPERTY_HERO_IMAGE,
   welcomeMessage: {
     es: "Esta vivienda de prueba confirma que la guia carga correctamente por slug y mantiene la arquitectura escalable.",
     en: "This test property confirms that the guide loads correctly by slug while keeping the architecture scalable.",
