@@ -1,6 +1,6 @@
 import { LanguageProvider } from '@/contexts/LanguageContext';
-import { properties } from '@/data/propertyData';
-import { useParams, Navigate } from 'react-router-dom';
+import { getPropertyBySlug } from '@/data/propertyData';
+import { useParams } from 'react-router-dom';
 import Header from '@/components/habitam/Header';
 import HeroSection from '@/components/habitam/HeroSection';
 import QuickInfoSection from '@/components/habitam/QuickInfoSection';
@@ -12,14 +12,14 @@ import RecommendationsSection from '@/components/habitam/RecommendationsSection'
 import ContactsSection from '@/components/habitam/ContactsSection';
 import FAQSection from '@/components/habitam/FAQSection';
 import FooterSection from '@/components/habitam/FooterSection';
+import NotFound from './NotFound';
 
 const PropertyPage = () => {
-  const { propertyId } = useParams();
-
-  const property = properties.find((item) => item.id === propertyId);
+  const { slug } = useParams();
+  const property = getPropertyBySlug(slug);
 
   if (!property) {
-    return <Navigate to="/404" replace />;
+    return <NotFound />;
   }
 
   return (

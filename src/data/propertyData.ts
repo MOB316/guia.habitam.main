@@ -1,2 +1,8 @@
 export * from './types';
-export { properties, propertiesById } from './properties';
+export {
+  DEFAULT_PROPERTY_SLUG,
+  getPropertyBySlug,
+  properties,
+  propertiesById,
+  propertiesBySlug,
+} from './properties';
