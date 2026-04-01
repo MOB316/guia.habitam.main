@@ -1,0 +1,54 @@
+{
+  "manual": {
+    "propertyName": "Nuevo Inmueble",
+    "slug": "nuevo-inmueble",
+    "address": "Calle Ejemplo 123, Palma de Mallorca",
+    "mapsUrl": "https://maps.google.com/?q=Palma+de+Mallorca",
+    "checkIn": "15:00",
+    "checkOut": "11:00",
+    "wifiName": "WIFI_DEL_INMUEBLE",
+    "wifiPassword": "password-demo",
+    "routerLocation": "En la estanteria del salon",
+    "hostPhone": "+34 600 000 000",
+    "emergencyPhone": "112",
+    "accessInstructions": "Entrada autonoma mediante codigo en la puerta principal.",
+    "houseRules": "No fumar dentro de la vivienda. No se permiten fiestas. Respetar el descanso de los vecinos.",
+    "heroImage": "/habitam-hero-option-2.svg",
+    "amenities": {
+      "hasElevator": true,
+      "hasParking": false,
+      "hasAC": true,
+      "hasHeating": true,
+      "hasWasher": true,
+      "hasCoffee": true,
+      "hasHairdryer": true,
+      "hasIron": true,
+      "hasMicrowave": true,
+      "hasDishwasher": false,
+      "hasOven": true
+    },
+    "inventory": [
+      {
+        "key": "kitchen",
+        "items": [
+          {
+            "name": "Platos",
+            "quantity": 6
+          }
+        ]
+      }
+    ]
+  },
+  "generated": {
+    "languageBase": "es",
+    "generateSubtitle": true,
+    "generateWelcomeMessage": true,
+    "generateNearbyPlaces": true,
+    "generateMobility": true,
+    "generateRecommendations": true,
+    "generateFaq": true,
+    "translateTo": ["en", "de"],
+    "brandTone": "elegante, claro, premium, cercano, practico",
+    "cityContext": "Palma de Mallorca"
+  }
+}
